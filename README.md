@@ -13,3 +13,8 @@
 10. 在 Python3 环境下安装pip包(不影响Python2)，如：`python3 -m pip install -U pylint`
 11. Python 可以使用 autopep8 来自动排版为 PEP8 风格
 12. 在 Python 文件第一行添加 `# -- coding: utf-8 --`，可防止乱码
+13. Python 的转义字符与其它编程语言一样，用 \ 来表示
+14. Python 允许用r''表示''内部的字符串默认不转义，如：print(r'\\\t\\')-> \\\t\\ 
+15. Python 允许用'''...'''的格式表示多行内容
+16. Python 布尔值只有True、False两种值，布尔值可以用and、or和not运算
+17. 
