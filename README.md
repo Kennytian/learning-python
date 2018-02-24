@@ -1,7 +1,7 @@
 ## Python 学习
 
 ### 一、基础知识
-1. Python 用 # 号作为注释
+1. Python 用 # 号作为注释，英文叫 octothorpe
 2. Python 不使用 ; 号作为换行符
 3. 两个 // 符号叫作地板除，结果不会有小数，如：`10 // 3  = 3`
 4. Mac 上安装了 Python3，打开IDLE，就是 Python3 的环境
