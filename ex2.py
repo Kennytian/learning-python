@@ -1,3 +1,5 @@
+# coding: utf-8
+print("习题 2: 注释和井号")
 # A comment, this is so you can read your program later.
 # Anything after the # is ignored by python.
 
