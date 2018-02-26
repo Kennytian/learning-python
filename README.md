@@ -18,3 +18,6 @@
 15. Python 允许用'''...'''的格式表示多行内容
 16. Python 布尔值只有True、False两种值，布尔值可以用and、or和not运算
 17. Python 中 print("My score %d" % 4.5)，用%d输出4，改用%s输出4.5
+18. Python 提供了 ord() 函数获取字符的整数表示，如：ord('中') # 20013
+19. Python 提供了 chr() 函数把编码转换为对应的字符，如：chr(25991) # 文
+20. Python 对 bytes 类型的数据用带b前缀的单引号或双引号表示，如：x = b'ABC'
