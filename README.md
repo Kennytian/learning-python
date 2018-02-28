@@ -1,6 +1,7 @@
 ## Python 学习
 
 ### 一、基础知识
+#### 1.1 数据类型、变量、字符串和编码
 1. Python 用 # 号作为注释，英文叫 octothorpe
 2. Python 不使用 ; 号作为换行符
 3. 两个 // 符号叫作地板除，结果不会有小数，如：`10 // 3  = 3`
@@ -21,3 +22,17 @@
 18. Python 提供了 ord() 函数获取字符的整数表示，如：ord('中') # 20013
 19. Python 提供了 chr() 函数把编码转换为对应的字符，如：chr(25991) # 文
 20. Python 对 bytes 类型的数据用带b前缀的单引号或双引号表示，如：x = b'ABC'
+
+#### 1.2 list 和 tuple
+1. Python 内置数据类型是列表，list是一种有序的集合，可以随时添加和删除其中的元素
+2. 初始化 classmates = ['Michael', 'Bob', 'Tracy']，取得列表长度(length) -> len(classmates)
+3. 如果要取最后一个元素，除了计算索引位置外，还可以用`-1`做索引，直接获取最后一个元素 -> Tracy
+4. list是一个可变的有序表，所以，可以往list中追加元素到末尾，如：`classmates.append('Adam')`
+5. 把元素插入到指定的位置 classmates.insert(1, 'Jack') # ['Michael', 'Jack', 'Bob', 'Tracy', 'Adam']
+6. 要删除list末尾的元素，用pop()，如：classmates.pop() # ['Michael', 'Jack', 'Bob', 'Tracy']
+7. 要删除指定位置的元素，用pop(i)方法，如：classmates.pop(1) # ['Michael', 'Bob', 'Tracy']
+8. list里面的元素的数据类型也可以不同，L = ['Apple', 123, True]，s = ['a',['b','c'],'d']; len(s) # 3
+9. tuple和list非常类似，但是tuple一旦初始化就不能修改，没有append()，insert()这样的方法
+10. tuple不可变，所以代码更安全。如果可能，能用tuple代替list就尽量用tuple
+
+
