@@ -22,8 +22,6 @@ height = float(input('你的身高(m)?'))
 
 bmi = weight / height / height
 
-print(bmi)
-
 if bmi < 18.5:
     print('您的体重BMI指数%.2f，判定为%s' % (bmi, list[0]))
 elif bmi < 25:
