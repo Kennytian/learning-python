@@ -35,7 +35,7 @@
 9. tuple和list非常类似，但是tuple一旦初始化就不能修改，没有append()，insert()这样的方法
 10. tuple不可变，所以代码更安全。如果可能，能用tuple代替list就尽量用tuple
 
-#### 1.3 set
+#### 1.3 set 和 dict
 1. set和dict类似，也是一组key的集合，但不存储value。由于key不能重复
 2. 重复元素在set中自动被过滤，set([1, 1, 2, 2, 3, 3]) # {1, 2, 3}
 3. set可以看成数学意义上的无序和无重复元素的集合，两个set可以做数学意义上的交集、并集等操作
@@ -45,6 +45,34 @@ s2 = set([2, 3, 4])
 s1 & s2 # {2, 3}
 s1 | s2 # {1, 2, 3, 4}
 ```
+4. Python内部很地方都使用着dict这种结构，在对象属性dict就是一个字典，所以对其效率要求很高。
+
+5. dict采用了**哈希表**，最低能在 o(1)时间内完成搜索，dict在发生哈希冲突的时候采用了**开放寻址法**。
+
+
+#### 文件操作
+```
+open(name, mode=None, buffering=None) 打开一个文件。
+close – 关闭文件。跟你编辑器的 文件->保存.. 一个意思。
+read – 读取文件内容。你可以把结果赋给一个变量。
+readline – 读取文本文件中的一行。
+truncate – 清空文件，请小心使用该命令。
+write(stuff) – 将stuff写入文件。
+```
+
+### Python 相关技能要求：
+* 熟悉HTML CSS JavaScript
+* 熟悉 MySQL、Oracle 等数据库
+* 熟悉 Linux 
+* 了解 HTTP 等网络协议
+* 熟悉爬虫、数据分析
+* 熟悉 Django、Flask、Tornado 等开发框架
+* 熟悉树莓派设备 Python 开发
+* 熟悉 RESTful 服务，深刻理解 MVC OOP
+* 熟悉常用设计模式、微服务
+
+
+
 
 
 
