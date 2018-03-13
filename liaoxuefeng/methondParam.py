@@ -1,3 +1,4 @@
+# coding: utf-8
 def power(x):
     return x * x
 
@@ -41,4 +42,43 @@ def addEnd(L=None):
     L.append('End')
     return L
 
+
 print(addEnd())
+
+
+# 指定参数
+def calc(numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+
+print('[1,2,3] -> %s' % calc([1, 2, 3]))
+print('(1,3,5,7) -> %s' % calc((1, 3, 5, 7)))
+
+
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+
+
+print('2, 4, 6 -> %s' % calc(2, 4, 6))
+print('() -> %s' % calc())
+print('*[1, 2, 3] -> %s' % calc(*[1, 2, 3]))
+
+
+def person(name, age, **kw):
+    print('name:', name, 'age:', age, 'other:', kw)
+
+
+person('Kenny', 30)  # ('name:', 'Kenny', 'age:', 30, 'other:', {})
+
+person('Tom', 20, city='England')  # ('name:', 'Tom', 'age:', 20, 'other:', {'city': 'England'})
+
+person('Adam', 45, gender='M', job='Engineer')  # ('name:', 'Adam', 'age:', 45, 'other:', {'gender': 'M', 'job': 'Engineer'})
+
+extra = {'city': 'Beijing', 'job': 'Engineer'}
+person('Jack', 23, **extra)  # ('name:', 'Jack', 'age:', 23, 'other:', {'city': 'Beijing', 'job': 'Engineer'})
