@@ -1,5 +1,7 @@
 ## Python 学习
 
+[![CircleCI](https://circleci.com/gh/Kennytian/learning-iot.svg?style=svg)](https://circleci.com/gh/Kennytian/learning-iot)
+
 ### 一、基础知识
 #### 1.1 数据类型、变量、字符串和编码
 1. Python 用 # 号作为注释，英文叫 octothorpe
